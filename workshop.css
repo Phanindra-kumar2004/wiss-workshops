@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/pstpn-webfont-montserrat@0.0.5/montserrat.min.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,9 +9,30 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
-.back{
+video {
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  @media screen and (max-width: 1000px) {
+    width: auto;
+    left: -40%;
+    height: 100vh;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 100vw;
+    height: fit-content;
+    height: 100vh;
+  }
+}
+
+.heading{
+  text-transform: uppercase;
+}
+
+.back {
   position: absolute;
   width: 50px;
   height: auto;
@@ -259,7 +282,7 @@ button.btn:hover {
 .tabs {
   position: relative;
   margin: 3rem 0;
-  background: #1abc9c;
+  background: rgba(0,0,0,0);
   height: 14.75rem;
 }
 
@@ -288,13 +311,16 @@ button.btn:hover {
   display: block;
   line-height: 2.75em;
   height: 3em;
-  padding: 0 1.618em;
-  background: #1abc9c;
+  padding: 0 1.218em;
+  margin: 0 0.4em;
+  background: rgba(0,0,0,0);
   border-right: 0.125rem solid #16a085;
   color: #fff;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
+  border: 2px #1479EA solid;
+  border-radius: 1.5em;
 }
 
 .tab-label:hover,
@@ -306,28 +332,30 @@ button.btn:hover {
 .tab-content {
   position: absolute;
   z-index: 1;
-  top: 2.75em;
+  top: 10vh;
   left: 0;
   padding: 1.618rem;
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0.25rem solid #bdc3c7;
+  background: rgba(25,25,25,0.95);
+  filter: opacity(0.9) grayscale(0.6);
+
+  color: #fff;
   opacity: 0;
   transition: all 0.35s;
   min-height: 40vh;
 }
 
-.tab-switch:checked+.tab-label {
-  background: #fff;
-  color: #2c3e50;
+.tab-switch:checked + .tab-label {
+  /* background: #fff; */
+  color: #fff;
   border-bottom: 0;
-  border-right: 0.125rem solid #fff;
   transition: all 0.35s;
   z-index: 1;
   top: -0.0625rem;
+  box-shadow: inset 0px 0px 25px #1479ea;
+  transform: scale(1.2) translateY(-10%);
 }
 
-.tab-switch:checked+label+.tab-content {
+.tab-switch:checked + label + .tab-content {
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
@@ -368,12 +396,13 @@ button.btn:hover {
   transition: all 0.35s;
 }
 
-.tab-switch2:checked+label+.tab-content2 {
+.tab-switch2:checked + label + .tab-content2 {
   height: fit-content;
   padding: 1.618em;
+  box-shadow: inset 0px 0px 25px #1479ea;
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   .tabs {
     display: none;
   }
