@@ -28,9 +28,6 @@ video {
   }
 }
 
-.heading{
-  text-transform: uppercase;
-}
 
 .back {
   position: absolute;
@@ -65,7 +62,6 @@ video {
   /* align-items: center; */
   width: 55%;
   margin: auto 3%;
-  z-index: 100;
 }
 
 .img-cnt {
@@ -231,7 +227,7 @@ nav.lap .close:hover div::after {
 
 button.btn {
   width: 40%;
-  min-width: max-content;
+  min-width: 175.2px;
   padding: 0 5%;
   position: relative;
   height: 3.5em;
@@ -271,8 +267,37 @@ button.btn::after {
   transform-origin: center;
 }
 
-button.btn:hover {
+button.register{
+  overflow: hidden;
+}
+
+button.register:hover {
   box-shadow: inset 0px 0px 25px #1479ea;
+}
+
+button.download:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}
+#payment{
+  position: absolute;
+  top: 5%;
+  left: -100%;
+  transition: all 0.35s;
+}
+
+button.register:hover #payment{
+  left: 0;
+}
+
+.heading{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 1.9em;
+}
+
+.price{
+  font-size: 2em;
+  font-weight: 400;
 }
 
 .tab-container {
@@ -311,7 +336,7 @@ button.btn:hover {
   display: block;
   line-height: 2.75em;
   height: 3em;
-  padding: 0 1.218em;
+  padding: 0 1.118em;
   margin: 0 0.4em;
   background: rgba(0,0,0,0);
   border-right: 0.125rem solid #16a085;
@@ -321,6 +346,11 @@ button.btn:hover {
   transition: all 0.25s;
   border: 2px #1479EA solid;
   border-radius: 1.5em;
+  font-size: 1em;
+}
+
+.tab-label2{
+  text-align: center;
 }
 
 .tab-label:hover,
@@ -332,22 +362,26 @@ button.btn:hover {
 .tab-content {
   position: absolute;
   z-index: 1;
-  top: 10vh;
+  margin-top: 50px;
   left: 0;
-  padding: 1.618rem;
+  width: 100%;
+  padding: 2.618rem;
   background: rgba(25,25,25,0.95);
   filter: opacity(0.9) grayscale(0.6);
-
+  box-shadow: inset 0px 0px 25px #1479ea;
+  border-radius: 50px;
   color: #fff;
   opacity: 0;
   transition: all 0.35s;
   min-height: 40vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
+  line-height: 1.4;
 }
 
 .tab-switch:checked + .tab-label {
   /* background: #fff; */
   color: #fff;
-  border-bottom: 0;
   transition: all 0.35s;
   z-index: 1;
   top: -0.0625rem;
@@ -361,7 +395,7 @@ button.btn:hover {
   transition: all 0.35s;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1060px) {
   .wrapper {
     flex-direction: column;
     margin: 8vh 0 8vh;
@@ -392,8 +426,11 @@ button.btn:hover {
   height: 0;
   width: 100%;
   overflow: hidden;
-  margin-top: 2.75em;
+  margin: 0.75em 0 2.75em;
   transition: all 0.35s;
+  border-radius: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 .tab-switch2:checked + label + .tab-content2 {
@@ -402,12 +439,15 @@ button.btn:hover {
   box-shadow: inset 0px 0px 25px #1479ea;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .tabs {
     display: none;
   }
 
   .tabs2 {
     display: block;
+  }
+  #payment{
+    top: 0;
   }
 }

@@ -41,8 +41,14 @@
         <img src="./images/full stack web development.jpg" alt="" class="picture">
       </div>
       <div class="btn-container">
-        <button class="btn custom-btn btn-5"><span> REGISTER</span></button>
-        <button class="btn custom-btn btn-5" style="margin-bottom: 30px;"><span> DOWNLOAD</span></button>
+        <button class="btn custom-btn btn-5 register"><span> REGISTER</span>
+          <form id="payment">
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NVX1svnBswrpqY"
+              async> </script>
+          </form>
+        </button>
+        <button class="btn custom-btn btn-5 download "><span> DOWNLOAD</span></button>
+        <button class="btn custom-btn btn-5 download " style="margin-bottom: 30px;"><span> ACCOMMODATION</span></button>
       </div>
     </div>
     <div
@@ -51,36 +57,40 @@
     </div>
     <div class="info">
       <div>
-        <h1 class="heading">workshop name</h1>
-        <span style="transform: translateY(15px);">&#8377 1200</span>
+        <h1 class="heading">web development</h1>
+        <span class="price">&#8377 1200 <span style="font-size: 0.5em; font-weight: 300;">(Excluding
+            taxes)</span></span>
       </div>
       <div class="tab-container">
         <div class="tabs">
           <div class="tab">
             <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
             <label for="tab-1" class="tab-label">About</label>
-            <div class="tab-content">My father had a small estate in Nottinghamshire: I was the third of five sons. He
-              sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied
-              myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance,
-              being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in
-              London, with whom I continued four years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              aspernatur iste impedit facere vero expedita quibusdam dolore eos ullam qui sapiente tempora hic laborum
-              laudantium, beatae nesciunt repellendus, dignissimos quisquam.</div>
+            <div class="tab-content">Web development refers to the creating, building, and maintaining of websites. It
+              includes aspects such as web design, web publishing, web programming, and database management. It is the
+              creation of an application that works over the internet i.e. websites.</div>
           </div>
           <div class="tab">
             <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
             <label for="tab-2" class="tab-label">Schedule</label>
-            <div class="tab-content">My father now and then sending me small sums of money, I laid them out in learning
-              navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed
-              it would be, some time or other, my fortune to do. </div>
+            <div class="tab-content">
+              <h3>Dates</h3>
+              <span>&nbsp;&nbsp;9 <sup>th</sup> - 10 <sup>th</sup> March 2024</span>
+              <h3>Timings</h3>
+              <span>&nbsp;&nbsp;9:00 AM - 12:00 PM <br>&nbsp;&nbsp;2:00 PM - 4:00 PM</span>
+            </div>
           </div>
           <div class="tab">
             <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
             <label for="tab-3" class="tab-label">Incentives</label>
-            <div class="tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him
-              and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to
-              maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in
-              long voyages.</div>
+            <div class="tab-content" style="line-height: 2;">
+              <ol>
+                <li> Free Exhibit passes.</li>
+                <li> Certificate from IIT Bhubaneswar.</li>
+                <li> Discount on starnite passes.</li>
+                <li> Summer internhip opportunities.</li>
+              </ol>
+            </div>
           </div>
           <div class="tab">
             <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
@@ -92,34 +102,45 @@
           <div class="tab">
             <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
             <label for="tab-5" class="tab-label">Contact</label>
-            <div class="tab-content">My father now and then sending me small sums of money, I laid them out in learning
-              navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed
-              it would be, some time or other, my fortune to do. </div>
+            <div class="tab-content" style="line-height: 1.6;">
+              Nihal - <br>
+              <i class="fa-solid fa-phone"></i>&nbsp; 7207846103 <br>
+              <i class="fa-solid fa-envelope"></i> &nbsp;21ee01050@iitbbs.ac.in <br><br>
+              Vinay kumar - <br>
+              <i class="fa-solid fa-phone"></i>&nbsp; 7095139716 <br>
+              <i class="fa-solid fa-envelope"></i> &nbsp;21ee01038@iitbbs.ac.in
+            </div>
           </div>
         </div>
         <div class="tabs2">
           <div class="tab2">
             <input type="checkbox" id="tab2-1" checked class="tab-switch2">
-            <label for="tab2-1" class="tab-label2"
-              style="margin-top: 2.75em;display: flex;justify-content: space-between;">About <span
-                style="color: red;">click here</span></label>
-            <div class="tab-content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi earum
-              odit odio perspiciatis. Dignissimos minus quisquam qui fuga obcaecati autem illum ab! Repellat quod cumque
-              beatae ad quis earum!</div>
+            <label for="tab2-1" class="tab-label2" style="margin-top: 2.75em;">About </label>
+            <div class="tab-content2">Web development refers to the creating, building, and maintaining of websites.
+              It includes aspects such as web design, web publishing, web programming, and database management.
+              It is the creation of an application that works over the internet i.e. websites.</div>
           </div>
           <div class="tab2">
-            <input type="radio" id="tab2-2" class="tab-switch2">
+            <input type="checkbox" id="tab2-2" class="tab-switch2">
             <label for="tab2-2" class="tab-label2">Schedule</label>
-            <div class="tab-content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi earum
-              odit odio perspiciatis. Dignissimos minus quisquam qui fuga obcaecati autem illum ab! Repellat quod cumque
-              beatae ad quis earum!</div>
+            <div class="tab-content2">
+              <h3>Dates</h3>
+              <span>&nbsp;&nbsp;9 <sup>th</sup> - 10 <sup>th</sup> March 2024</span>
+              <h3>Timings</h3>
+              <span>&nbsp;&nbsp;9:00 AM - 12:00 PM <br>&nbsp;&nbsp;2:00 PM - 4:00 PM</span>
+            </div>
           </div>
           <div class="tab2">
             <input type="checkbox" id="tab2-3" class="tab-switch2">
             <label for="tab2-3" class="tab-label2">Incentives</label>
-            <div class="tab-content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi earum
-              odit odio perspiciatis. Dignissimos minus quisquam qui fuga obcaecati autem illum ab! Repellat quod cumque
-              beatae ad quis earum!</div>
+            <div class="tab-content2">
+              <ol>
+                <li> Free Exhibit passes.</li>
+                <li> Certificate from IIT Bhubaneswar.</li>
+                <li> Discount on starnite passes.</li>
+                <li> Summer internhip opportunities.</li>
+              </ol>
+            </div>
           </div>
           <div class="tab2">
             <input type="checkbox" id="tab2-4" class="tab-switch2">
@@ -132,7 +153,12 @@
             <input type="checkbox" id="tab2-5" class="tab-switch2">
             <label for="tab2-5" class="tab-label2">Contact</label>
             <div class="tab-content2">
-
+              Nihal - <br>
+              <i class="fa-solid fa-phone"></i>&nbsp; 7207846103 <br>
+              <i class="fa-solid fa-envelope"></i> &nbsp;21ee01050@iitbbs.ac.in <br><br>
+              Vinay kumar - <br>
+              <i class="fa-solid fa-phone"></i>&nbsp; 7095139716 <br>
+              <i class="fa-solid fa-envelope"></i> &nbsp;21ee01038@iitbbs.ac.in
             </div>
           </div>
         </div>
