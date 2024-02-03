@@ -133,6 +133,7 @@ nav.lap {
 
 nav.lap ul {
   list-style: none;
+  transform: scale(0);
 }
 
 nav.lap ul li {
