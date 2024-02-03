@@ -352,6 +352,7 @@ button.register:hover #payment{
 
 .tab-label2{
   text-align: center;
+  width: fit-content;
 }
 
 .tab-label:hover,
@@ -378,6 +379,7 @@ button.register:hover #payment{
   font-family: "Raleway", sans-serif;
   font-size: 1.4em;
   line-height: 1.4;
+  text-align: justify;
 }
 
 .tab-switch:checked + .tab-label {
@@ -432,6 +434,7 @@ button.register:hover #payment{
   border-radius: 1.5em;
   font-size: 1.1em;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .tab-switch2:checked + label + .tab-content2 {
