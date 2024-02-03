@@ -346,13 +346,14 @@ button.register:hover #payment{
   top: 0;
   transition: all 0.25s;
   border: 2px #1479EA solid;
-  border-radius: 1.5em;
+  border-radius: 0.2em;
   font-size: 1em;
 }
 
 .tab-label2{
   text-align: center;
   width: fit-content;
+  margin: 0 auto;
 }
 
 .tab-label:hover,
