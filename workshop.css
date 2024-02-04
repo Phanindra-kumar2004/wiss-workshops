@@ -28,7 +28,6 @@ video {
   }
 }
 
-
 .back {
   position: absolute;
   width: 50px;
@@ -268,7 +267,7 @@ button.btn::after {
   transform-origin: center;
 }
 
-button.register{
+button.register {
   overflow: hidden;
 }
 
@@ -279,24 +278,24 @@ button.register:hover {
 button.download:hover {
   box-shadow: inset 0px 0px 25px #1479ea;
 }
-#payment{
+#payment {
   position: absolute;
   top: 5%;
   left: -100%;
   transition: all 0.35s;
 }
 
-button.register:hover #payment{
+button.register:hover #payment {
   left: 0;
 }
 
-.heading{
+.heading {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 1.9em;
 }
 
-.price{
+.price {
   font-size: 2em;
   font-weight: 400;
 }
@@ -308,7 +307,7 @@ button.register:hover #payment{
 .tabs {
   position: relative;
   margin: 3rem 0;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   height: 14.75rem;
 }
 
@@ -339,18 +338,18 @@ button.register:hover #payment{
   height: 3em;
   padding: 0 1.118em;
   margin: 0 0.4em;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   border-right: 0.125rem solid #16a085;
   color: #fff;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
-  border: 2px #1479EA solid;
+  border: 2px #1479ea solid;
   border-radius: 0.2em;
   font-size: 1em;
 }
 
-.tab-label2{
+.tab-label2 {
   text-align: center;
   width: fit-content;
   margin: 0 auto;
@@ -369,7 +368,7 @@ button.register:hover #payment{
   left: 0;
   width: 100%;
   padding: 2.618rem;
-  background: rgba(25,25,25,0.95);
+  background: rgba(25, 25, 25, 0.95);
   filter: opacity(0.9) grayscale(0.6);
   box-shadow: inset 0px 0px 25px #1479ea;
   border-radius: 50px;
@@ -452,7 +451,138 @@ button.register:hover #payment{
   .tabs2 {
     display: block;
   }
-  #payment{
+  #payment {
     top: 0;
   }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap");
+
+nav * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.navbutton {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 30px;
+}
+
+nav {
+  height: 100vh;
+  background-color: #130c61;
+  width: 200px;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  transform: translateX(1800px);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+nav .logo {
+  margin: 25px 0 20px;
+}
+
+nav .logo a {
+  font-size: 2vh;
+  color: white;
+  padding: 10px;
+
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+nav .logo a:hover {
+  padding-right: 20px;
+}
+
+nav .logo a i {
+  font-size: 27px;
+  margin-right: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+nav .logo a:hover i {
+  transform: rotate(180deg);
+}
+
+nav ul li {
+  padding: 10px;
+  font-weight: 500;
+}
+
+nav ul li a {
+  color: #fff;
+  transition: all 0.5s ease;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  background-color: #fff;
+  color: #130c61;
+  display: block;
+  padding-right: 10px;
+}
+
+.navbutton {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  background-color: rgb(0 0 0 / 0%);
+  padding: 3px 5px;
+  border-radius: 3px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  transform: translateX(0);
+  transition: background-color 0.5s ease, transform 0.47s ease-in-out;
+}
+
+.navbutton:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.navbutton.active {
+  transform: translateX(-180px);
+  position: fixed;
+  right: 55px;
+}
+
+.lapnav {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+}
+
+nav .logo span {
+  margin: auto;
+}
+
+.fa-solid {
+  font-size: xx-large;
 }
